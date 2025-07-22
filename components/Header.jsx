@@ -1,4 +1,4 @@
-import { SignedIn } from '@clerk/nextjs';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -50,6 +50,21 @@ const Header = async ({ isAdminPage = false }) => {
           </SignedIn>
         )}
 
+        <SignedOut>
+          <SignInButton forceRedirectUrl='/'>
+            <Button variant={"outline"}>Login</Button>
+          </SignInButton>
+        </SignedOut>
+
+        <SignedIn>
+          <UserButton 
+            appearance={{
+              elements: {
+                avatarBox: 'h-10 w-10'
+              }
+            }}
+          />
+        </SignedIn>
         
       </div>
     </nav>
