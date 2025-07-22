@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
           <main className="h-screen">
             {children}
           </main>
-          <footer className="bg-blue-100 p-12">
+          <footer className="bg-blue-100 p-6">
             <div className=" container mx-auto text-gray-600 text-center p-4">
               <p>Made with ❤️ by Coding Spirit</p>
             </div>
