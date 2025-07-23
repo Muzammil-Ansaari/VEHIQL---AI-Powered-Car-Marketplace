@@ -21,10 +21,10 @@ export default function RootLayout({ children }) {
 
           <Header />
 
-          <main className="h-screen">
+          <main className="h-full">
             {children}
           </main>
-          <footer className="bg-blue-100 p-6">
+          <footer className="bg-blue-200 p-6">
             <div className=" container mx-auto text-gray-600 text-center p-4">
               <p>Made with ❤️ by Coding Spirit</p>
             </div>
