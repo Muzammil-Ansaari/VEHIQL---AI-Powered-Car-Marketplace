@@ -71,7 +71,6 @@ const CarCard = ({ car }) => {
           <div className="flex justify-between">
             <Button className="flex-1" onClick={() => router.push(`/cars/${car.id}`)}>View Car</Button>
           </div>
-
       </CardContent>
     </Card>
   );
