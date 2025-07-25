@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <body className={`${inter.className}`}>
           <Header />
 
-          <main className="h-full">{children}</main>
+          <main className="min-h-screen">{children}</main>
           <Toaster richColors />
 
           <footer className="bg-blue-200 p-6">
