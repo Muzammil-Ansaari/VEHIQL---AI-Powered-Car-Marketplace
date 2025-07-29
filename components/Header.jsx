@@ -21,7 +21,7 @@ const Header = async ({ isAdminPage = false }) => {
 
       <div className='flex items-center space-x-4'>
         {isAdminPage ? (
-          <Link href={"/saved-cars"}>
+          <Link href={"/"}>
             <Button variant={"outline"} className={"flex items-center gap-2"}>
               <ArrowLeft size={18} />
               <span>Back to App</span>
